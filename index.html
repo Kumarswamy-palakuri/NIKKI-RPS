@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  </style>
+</head>
+<body>
+  <div class="heading">
+    <div class="heads">
+      <h5>ROCK</h5>
+      <h5>PAPER</h5>
+      <h5>SCISSORS</h5>
+    </div>
+    <div class="score-boxs">
+      <div class="c-score score">
+        <p>COMPUTER</p>
+        <p>SCORE</p>
+        <h2>0</h2>
+      </div>
+      <div class="y-score score">
+        <p>YOUR</p>
+        <p>SCORE</p>
+        <h2>0</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="triangle">
+    <!-- Buttons -->
+    <button class="button rock z9 choice" id="rock"  aria-label="Rock">✊</button>
+    <button class="button paper z9 choice" id="paper"  aria-label="Paper">✋</button>
+    <button class="button scissors z9 choice" id="scissors" aria-label="Scissors">✌️</button>
+    <!-- Lines -->
+    <div class="line line-rock-paper"></div>
+    <div class="line line-paper-scissors"></div>
+    <div class="line line-rock-scissors"></div>
+  </div>
+  <div class="end-choice">
+    <div class="user-choice">
+      <p class="end-p">YOU PICKED</p>
+      <!-- Make the ID unique for user and computer choices -->
+      <button class="button-choice" id="user-choice">✋</button>
+    </div>
+    <div class="middle">
+      <h2>YOU WIN</h2>
+      <h6>AGAINST PC</h6>
+      <button>PLAY AGAIN</button>
+    </div>
+    <div class="computer-choice">
+      <p class="end-p">PC PICKED</p>
+      <!-- Make the ID unique for user and computer choices -->
+      <button class="button-choice" id="computer-choice">✋</button>
+    </div>
+  </div>
+
+
+  
+  <!-- lower -->
+  <div class="lower">
+  <button class="rules-button" onclick="showPopup()">RULES</button>
+  <div class="overlay" id="overlay"></div>
+  <div class="popup" id="rulesPopup">
+    <button class="close-button" onclick="closePopup()">&times;</button>
+    <h3>Game Rules</h3>
+    <div class="content">
+      <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</li>
+        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+        <li>If both players lay down the same hand, each player lays down another hand.</li>
+      </ul>
+    </div>
+  </div>
+  <!-- next -->
+  <button class="next-button">NEXT</button>
+  </div>
+  <div class="hurray">
+    <div class="design">
+      <img src="./svgs/hurray.jpg">
+    </div>
+    <button>PLAY AGAIN</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

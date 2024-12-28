@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ROCK PAPER SCISSORS</h1>
+            <div class="scoreboard">
+                <div class="score">
+                    <p>COMPUTER SCORE</p>
+                    <p id="computer-score">0</p>
+                </div>
+                <div class="score">
+                    <p>YOUR SCORE</p>
+                    <p id="player-score">0</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="game">
+                <div class="option" id="rock" onclick="playerMove('rock')">
+                    <img src="rock.png" alt="Rock">
+                </div>
+                <div class="option" id="paper" onclick="playerMove('paper')">
+                    <img src="paper.png" alt="Paper">
+                </div>
+                <div class="option" id="scissors" onclick="playerMove('scissors')">
+                    <img src="scissors.png" alt="Scissors">
+                </div>
+            </div>
+            <div class="rules">
+                <button id="rules-btn" onclick="toggleRules()">RULES</button>
+            </div>
+        </main>
+
+        <div id="rules-popup">
+            <div class="popup-content">
+                <h2>Game Rules</h2>
+                <ul>
+                    <li>Rock beats Scissors, Scissors beat Paper, and Paper beats Rock.</li>
+                    <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot".</li>
+                    <li>Use Rock, Paper, Scissors to settle decisions or pass the time.</li>
+                    <li>If both players tie, repeat the round.</li>
+                </ul>
+                <button id="close-popup" onclick="toggleRules()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
