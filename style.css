@@ -295,8 +295,9 @@ font-weight: 500;
 }
 .hurray img{
   width: 100%;
-  height: 100%;
-  object-fit: cover; 
+  /* height: 100%; */
+  object-fit: contain;
+
   z-index: 3;
 }
 .hurray button{
@@ -328,4 +329,50 @@ font-weight: 500;
 .button-border-paper
 .button-border-rock{
   border: 10px solid rgb(41, 106, 203);
+}
+@media (max-width: 480px) {
+
+body{
+  margin-top: 130px;
+}
+.heading {
+  width: 99%;
+}
+    
+  .end-choice {
+    width: 80%;
+    max-width: 700px;
+    height: 200px;
+    margin: 40px auto 20px;
+    display: none;
+}
+  .middle {
+    width: 40%;
+    color: #fff;
+    text-align: center;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 80px;
+}
+.middle button {
+  width: 150px;
+  padding: 8px 20px;
+  margin: 10px 0 5px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #030b0095;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 67%;
+  right: 4%;
+}
+.hurray {
+  overflow: hidden;
+}
 }

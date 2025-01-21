@@ -16,6 +16,28 @@ const nextButton = document.querySelector('.next-button');
 const hurray = document.querySelector('.hurray');
 const playAgainButtonNext = document.querySelector('.hurray button');
 
+//POPUP-----------
+// Function to toggle the popup display
+function showPopup() {
+  const popup = document.getElementById("rulesPopup");
+
+  
+  // Display the popup and overlay
+  popup.style.display = "block";
+
+}
+
+// Function to close the popup
+function closePopup() {
+  const popup = document.getElementById("rulesPopup");
+  const overlay = document.getElementById("overlay");
+  
+  // Hide the popup and overlay
+  popup.style.display = "none";
+  overlay.style.display = "none";
+}
+
+
 // Elements for triangle and game buttons
 const triangle = document.querySelector('.triangle');
 
@@ -147,6 +169,7 @@ nextButton.addEventListener('click', () => {
 
     nextButton.style.display = 'none';
     hurray.style.display = 'block';
+    popup.style.display = "none";
   }
 });
 
