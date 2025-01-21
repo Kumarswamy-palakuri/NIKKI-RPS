@@ -169,7 +169,8 @@ nextButton.addEventListener('click', () => {
 
     nextButton.style.display = 'none';
     hurray.style.display = 'block';
-    popup.style.display = "none";
+    
+    document.querySelector('.lower').style.display = 'none';
   }
 });
 
