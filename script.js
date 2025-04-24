@@ -158,14 +158,16 @@ nextButton.addEventListener('click', () => {
     userScoreElement.textContent = userScore;
     computerScoreElement.textContent = computerScore;
 
-    playAgainButtonNext.addEventListener('click', () => {
-      document.querySelector('.end-choice').style.display = 'none';
-      triangle.style.display = 'block';
 
-      document.getElementById("user-choice").classList.remove('win-border');
-      document.getElementById("computer-choice").classList.remove('win-border');
-      hurray.style.display = 'none';
-    });
+    // playAgainButtonNext.addEventListener('click', () => {
+    //   document.querySelector('.end-choice').style.display = 'none';
+    //   triangle.style.display = 'block';
+
+    //   document.getElementById("user-choice").classList.remove('win-border');
+    //   document.getElementById("computer-choice").classList.remove('win-border');
+    //   hurray.style.display = 'none';
+    //   document.querySelector('.lower').style.display = 'block';
+    // });
 
     nextButton.style.display = 'none';
     hurray.style.display = 'block';

@@ -219,7 +219,7 @@ border: 8px solid blue;
 }
 .end-p{
   color: #fff;
-  z-index: 2;
+  z-index: 0;
   position: relative;
   top: -70px;
   font-size: 0.8em;
@@ -284,7 +284,7 @@ font-weight: 500;
 /*--------HURRAY-----*/
 .hurray{
   width: 800px;
-  height: 800px;
+  /* height: 800px; */
   display: none;
   position: absolute;
   top: 5%;
@@ -292,6 +292,7 @@ font-weight: 500;
   transform: translate(50%);
   /* z-index: 999; */
   text-align: center;
+  overflow: hidden;
 }
 .hurray img{
   width: 100%;
@@ -319,6 +320,7 @@ font-weight: 500;
   0 0 0 20px rgb(5, 187, 5),       
   0 0 0 30px rgba(50, 205, 50, 0.718),  
   0 0 0 40px rgba(19, 214, 19, 0.322); 
+  z-index: -1;
  }
 .button-border-scissors{
   border: 10px solid rgb(199, 66, 199);
@@ -326,7 +328,7 @@ font-weight: 500;
 .button-border-paper{
   border: 10px solid rgb(240, 197, 80);
 }
-.button-border-paper
+
 .button-border-rock{
   border: 10px solid rgb(41, 106, 203);
 }
